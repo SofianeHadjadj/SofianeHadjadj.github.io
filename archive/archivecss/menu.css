@@ -1,0 +1,151 @@
+.demo-salal {
+	--color-text: #b5b5b5;
+	--color-background: #222325;
+	--color-link: #515152;
+	--color-link-hover: #fff;
+}
+
+
+a.menu__item {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0);
+	color: var(--color-link);
+	outline: none;
+	font-family: 'pdb', serif;
+}
+
+a.menu__item:hover,
+a.menu__item:focus {
+	color: #423c2b;
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+
+
+#contMenu {
+	position: relative;
+	width: 100%;
+}
+
+.content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+/* Common styles for the menus */
+
+.menu--salal .menu__item {
+	font-size: 1.25em;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	margin: 2em 0;
+}
+
+.menu--salal .menu__item:hover {
+	color: #515152;
+}
+
+.menu--salal .menu__item:first-child {
+	--menu-item-color:#f85f83;
+}
+
+.menu--salal .menu__item:nth-child(2) {
+	--menu-item-color:#f7bd1f;
+}
+
+.menu--salal .menu__item:nth-child(3) {
+	--menu-item-color:#24d261;
+}
+
+.menu--salal .menu__item:nth-child(4) {
+	--menu-item-color:#6537f7;
+}
+
+.menu--salal .menu__item-name {
+	font-weight: 700;
+	padding: 0.25em;
+	color: #fff;
+}
+
+.menu--salal .menu__item-name::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: var(--menu-item-color);
+	transform: scale3d(1,0,1);
+	transform-origin: 50% 100%;
+	transition: transform 0.3s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.menu--salal .menu__item:hover .menu__item-name::before,
+.menu--salal .menu__item:focus .menu__item-name::before {
+	transform: scale3d(1,1,1);
+	transform-origin: 50% 0%;
+}
+
+.menu--salal .menu__item-label {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0.5em 0 0 1.5em;
+	white-space: pre;
+	color: #515152;
+	font-weight: lighter;
+}
+
+.menu--salal .menu__item-label span {
+	display: inline-block;
+}
+
+.menu {
+	position: relative;
+	z-index: 10;
+}
+
+.menu__item {
+	line-height: 1;
+	position: relative;
+	display: block;
+	margin: 1em 0;
+	outline: none;
+}
+
+.menu__item-name,
+.menu__item-label {
+	position: relative;
+	display: inline-block;
+}
+
+.menu__item-name {
+	font-size: 1.25em;
+}
+
+.menu__item-label {
+	margin: 0 0 0 0.5em;
+}
+
+
+@media screen and (max-width: 50em) {
+
+	.content {
+		height: auto;
+		min-height: 0;
+		padding-bottom: 10em;
+	}
+	.menu--salal .menu__item-label {
+		font-size: 0.6em;
+		margin-left: 0.25em;
+	}
+}
