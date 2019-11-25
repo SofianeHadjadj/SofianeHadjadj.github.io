@@ -1,0 +1,27 @@
+{
+	"menu" : {
+	    "accueil" : "Accueil",
+	    "ensavoirplus" : "À Propos",
+	    "mesvoyages" : "Voyages",
+	    "mescompetences" : "Compétences",
+	    "mesprojets" : "Projets",
+	    "mecontacter" : "Contact"
+	},
+	"salutation" : "Bonjour à tous !",
+	"identite" : "Je suis",
+	"super" : "Un super",
+	"apropos" : "À Propos De Moi !",
+	"parle" : "Langues Que Je Parle :",
+	"voyages" : "Mes Voyages !",
+	"competences" : "Mes Savoir-Faire !",
+	"comp1" : "Langages & Frameworks",
+	"comp2" : "Outils De Travail",
+	"comp3" : "Compétences Principales",
+	"projets" : "Mes Projets !",
+	"titpr1" : "Projet N°1",
+	"titpr2" : "Projet N°2",
+	"titpr3" : "Projet N°3",
+	"contacter" : "Restons En Contact",
+	"ecrivez" : "Ecrivez-moi n'importe quand !",
+	"envoyer" : "Envoyer"
+}

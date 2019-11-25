@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Statistiques globales</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/accord.css">
+        <!-- Scripr -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+    </head>
+
+    <body style="overflow-x: hidden !important;">
+
+        <div id="bensassi" style="position : absolute;width: 100% !important;height: 200% !important; background-color: white; z-index: 9999999">
+
+            <audio autoplay>  
+                <source src="mp3/onepiece.mp3" type="audio/mpeg">  
+            </audio> 
+
+            <h2 style="color: red;text-align: center;">Un grand merci à cet Homme (ta3 les ZHOMME) pour son aide précieuse !</h2>
+            <p style="text-align: center;font-size: 30px; color: red;font-weight: bold"><span id="prenom"></span><span id="nom"></span></p>
+            <div id="bip" class="display"></div>
+            <img class="heart" id="photo" style="  display: block;margin-left: auto;margin-right: auto;width: 500px;">
+        </div>
+
+        <div class="row text-center">
+            <h1 class="heading-title" style="margin-bottom: 30px !important">Statistiques globales</h1>
+        </div>
+
+        <div id="page-3" class="page three">
+            <h2 class="heading" style="text-align: center;">Relation "Offre <-> Demande"</h2>
+            <h4 style="font-size: 25px;text-align: center;margin-top: 50px;color: #b70505">Liste des compétences :</h4>
+            <select class="form-control" id="derouleur" style="width: 700px;margin: auto;margin-top: 30px;margin-bottom: 50px;"></select>
+            <div class = "row" style="width: 50%;margin: auto;border: 3px solid #b70505;min-height: 300px;margin-bottom: 30px;padding-bottom: 20px;">
+                <div class="col-md-6 animate-box">
+                    <h3 style='color:#133349'>Personne experte : </h3>
+                    <span id="listeScore">
+                    </span>
+                </div>
+                <div class="col-md-6 animate-box" >
+                    <h3 style='color:#133349'>Besoin urgent : </h3>
+                    <span id="listeScoreB">
+                    </span>
+                </div>
+            </div>
+            <div class = "row" style="width: 50%;margin: auto;border: 3px solid #b70505;min-height: 300px;margin-bottom: 30px;padding-bottom: 20px;">
+                <div class="col-md-6 animate-box">
+                    <h3 style='color:#133349'>Personne compétente : </h3>
+                    <span id="listeScoreC">
+                    </span>
+                </div>
+                <div class="col-md-6 animate-box" >
+                    <h3 style='color:#133349'>Besoin certain : </h3>
+                    <span id="listeScoreD">
+                    </span>
+                </div>
+            </div>          
+        </div>
+
+        <div id="contProg" class="accordion" style="width: 160%;">
+            <div class="accordion__item" style="width: 50%;height: 100%;float: left;position:absolute;margin-left: 0px !important">
+                <div class="accordion__item__header" style="width: 750px;margin: auto;">
+                 <h3 style="text-align: center;margin-bottom: 40px;margin-top:40px">Compétences de la classe :</h3>
+                </div>
+                <div class="accordion__item__content">
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-6" id="wrap_cp"  style="width: 750px !important;margin-left: 100px !important">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item" style="width: 50%;height: 100%;float: left;position:absolute;margin-left: 850px !important">
+                <div class="accordion__item__header" style="width: 750px;margin: auto;">
+                    <h3 style="text-align: center;margin-bottom: 40px;margin-top:40px">Besoins de la classe :</h3>
+                </div>
+                <div class="accordion__item__content">
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-6" id="wrap_bs"  style="width: 750px !important;margin-left: 100px !important">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/csv.parse.js"></script>
+        <script src="js/accord.js"></script>
+    </body>
+</html>

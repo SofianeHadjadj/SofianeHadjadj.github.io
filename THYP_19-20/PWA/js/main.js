@@ -1,0 +1,1 @@
+window.onload=(()=>{"use strict";"serviceWorker"in navigator&&navigator.serviceWorker.register("./sw.js").then(function(e){console.log("Service worker réussi:",e)},function(e){console.log("Service worker echec:",e)})});

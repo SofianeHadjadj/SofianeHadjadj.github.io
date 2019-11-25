@@ -1,0 +1,10 @@
+#map {
+	position: relative;
+	height: 500px;
+	width: 100%;
+	left: 0;
+}
+
+#all {
+	margin-bottom: 100px
+}

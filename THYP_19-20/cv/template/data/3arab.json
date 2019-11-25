@@ -1,0 +1,27 @@
+{
+	"menu" : {
+	    "accueil" : "إستقبال",
+	    "ensavoirplus" : "عني",
+	    "mesvoyages" : "رحلاتي",
+	    "mescompetences" : "مهاراتي",
+	    "mesprojets" : "مشاريعي",
+	    "mecontacter" : "اتصال"
+	},
+	"salutation" : "السلام عليكم !",
+	"identite" : "أنا",
+	"super" : "عظيم",
+	"apropos" : "عني",
+	"parle" : ": اللغات التي أتحدث بها",
+	"voyages" : "! رحلاتي",
+	"competences" : "! مهاراتي",
+	"comp1" : "اللغات والأطر",
+	"comp2" : "أدوات العمل",
+	"comp3" : "المهارات الرئيسية",
+	"projets" : "! مشاريعي",
+	"titpr1" : "1 المشروع",
+	"titpr2" : "2 المشروع",
+	"titpr3" : "3 المشروع",
+	"contacter" : "ابقى على تواصل",
+	"ecrivez" : "! اكتب لي في أي وقت",
+	"envoyer" : "إرسال"
+}

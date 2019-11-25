@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo List. Permet à l'utilisateur de faire une liste de chose à faire.">
+    <meta name="theme-color" content="#9CDE9F">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Hello World">
+    <meta name="msapplication-TileImage" content="images/logo-144x144">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <title>TODO List</title>
+
+    <!-- OWN FILES -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo-152x152.png">
+    <link rel="apple-touch-icon" href="images/logo-192x192.png">
+    <script src="js/main.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="fullscreen">
+    <div class="container-fluid">
+        <div class="row title-wrapper">
+            <h1 class="title"><span class="color-letter">T</span>ODO List</h1>
+        </div>
+        <div class="row user-input-wrapper">
+            <input type="text" id="userInput" name="input-todo" placeholder="Ajouter à la TODO ?" required>
+            <button class="btn btn-success btn-user-input" onclick="addToList();">Ajouter</button>
+        </div>
+        <div class="row user-todo-list">
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function addToList() {
+        var todoList = document.querySelector('.user-todo-list');
+        var valInput = document.getElementById("userInput").value;
+        var input = document.getElementById("userInput");
+        var box2 = document.createElement('div');
+        var text = document.createElement('p');
+
+        box2.className = 'card box-TODO';
+        text.className = 'element-TODO';
+        text.innerText = "- " + valInput;
+
+        box2.addEventListener("click", function () {
+           todoList.removeChild(this);
+        });
+
+        box2.appendChild(text);
+        todoList.appendChild(box2);
+
+        // Cookie
+
+
+        input.value = "";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+	"menu" : {
+	    "accueil" : "Home",
+	    "ensavoirplus" : "About",
+	    "mesvoyages" : "Trips",
+	    "mescompetences" : "Skills",
+	    "mesprojets" : "Projects",
+	    "mecontacter" : "Contact"
+	},
+	"salutation" : "Hey There !",
+	"identite" : "I Am",
+	"super" : "A great",
+	"apropos" : "About Me !",
+	"parle" : "Languages ​​I speak:",
+	"voyages" : "My trips !",
+	"competences" : "My Skills !",
+	"comp1" : "Languages & Frameworks",
+	"comp2" : "Work Tools",
+	"comp3" : "Main Skills",
+	"projets" : "My Projects !",
+	"titpr1" : "Project N°1",
+	"titpr2" : "Project N°2",
+	"titpr3" : "Project N°3",
+	"contacter" : "Get In Touch",
+	"ecrivez" : "Write me anytime!",
+	"envoyer" : "Send Message"
+}
