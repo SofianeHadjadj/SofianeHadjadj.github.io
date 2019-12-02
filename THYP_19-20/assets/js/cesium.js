@@ -2,8 +2,6 @@
     
     var viewer = new Cesium.Viewer('cesium');
 
-    viewer.fitBounds(country.getBounds);
-
     viewer.dataSources.add(Cesium.GeoJsonDataSource.load('assets/js/countries/3_visites.json',{
         stroke: Cesium.Color.RED,
         fill: Cesium.Color.RED.withAlpha(0.5),
